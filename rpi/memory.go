@@ -2,7 +2,7 @@ package rpi
 
 import "math"
 
-// Memory represents a memory measurement of the system
+// Memory represents the system memory information
 type Memory struct {
 	Total     uint64
 	Used      uint64
