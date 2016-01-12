@@ -1,16 +1,16 @@
-package rpi_test
+package raspberry_test
 
 import (
 	"testing"
 
-	"github.com/nproc/rpi-board-info/rpi"
+	"github.com/nproc/rpi-board-info/raspberry"
 	"github.com/stretchr/testify/assert"
 )
 
-var m rpi.Memory
+var m raspberry.Memory
 
 func init() {
-	m = rpi.Memory{
+	m = raspberry.Memory{
 		Total:     8252903424,
 		Used:      3724775424,
 		Cached:    1384595456,

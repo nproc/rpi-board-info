@@ -1,4 +1,4 @@
-package rpi
+package raspberry
 
 import "math"
 

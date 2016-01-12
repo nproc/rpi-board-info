@@ -1,8 +1,8 @@
-package rpi
+package raspberry
 
 // CPU simply represents a Central Processing Unit
 type CPU struct {
-	Cpu   int
+	Index int
 	Model string
 	Cores int
 }
