@@ -86,7 +86,7 @@ module.exports = {
           path.resolve(__dirname, 'src')
         ],
       }, {
-        test: /\.(png|jpe?g|woff)$/,
+        test: /\.(png|jpe?g|woff|svg)$/,
         loader: 'url-loader?limit=10000',
       }
     ]
