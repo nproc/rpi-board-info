@@ -6,3 +6,7 @@
 [libs]
 
 [options]
+module.name_mapper='^.*\.\(css\|svg\)$' -> '<PROJECT_ROOT>/src/empty'
+munge_underscores=true
+suppress_type=$FlowIssue
+suppress_comment=\\(.\\|\n\\)*\\$FlowIssue
