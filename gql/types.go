@@ -137,7 +137,7 @@ func NewNetworkData(src info.Network) *NetworkData {
 
 type NetworkData struct {
 	Name            string   `json:"name"`
-	HardwareAddress string   `json:"hardwareaddress"`
+	HardwareAddress string   `json:"hardwareAddress"`
 	IPs             []string `json:"ips"`
 }
 
