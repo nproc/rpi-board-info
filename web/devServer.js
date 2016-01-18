@@ -10,6 +10,20 @@ let devServer = new WebpackDevServer(webpack(config), {
   historyApiFallback: true,
   stats: {
     colors: true
+  },
+  proxy: {
+    '*': {
+      target: 'http://localhost:3000',
+      secure: false,
+      bypass: (req, res, proxyOptions) => {
+        if (req.headers.accept.indexOf('html') !== -1) {
+          return '/index.html';
+        }
+      }
+    }
+  },
+  headers: {
+    'Access-Control-Allow-Origin': '*'
   }
 })
 
